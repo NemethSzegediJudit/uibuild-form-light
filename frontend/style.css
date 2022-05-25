@@ -1,0 +1,114 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7E4D4;
+    height: 100vh;
+    width: 100%;
+    font-weight: normal;
+    color: #467745;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    display: flex;
+    text-align: center;
+
+    font-family: 'EB Garamond', serif;
+    font-size: 48px;
+    font-weight: normal;
+}
+
+.input-areas {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    max-width: 480px;
+
+    margin: 20px 20px 30px 20px;
+}
+
+.subject {
+    height: 64px;
+    background-color: #FFFFFF;
+
+    font-size: 16px;
+    font-weight: normal;
+
+    padding: 15px;
+    margin-bottom: 25px;
+}
+
+textarea {
+    height: 120px;
+    background-color: #FFFFFF;
+
+    font-size: 16px;
+
+    padding: 15px;
+}
+
+.acceptance {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 480px;
+
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 16px;
+    font-weight: normal;
+    word-wrap: break-word;
+}
+
+a {
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    max-width: 280px;
+    height: 80px;
+
+    background-color: #467745;
+    border-radius: 100px;
+
+    font-family: 'EB Garamond', serif;
+    font-size: 21px;
+    font-weight: normal;
+    color: #F7E4D4;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+@media (max-width: 520px) {
+    h1 {
+        font-size: 36px;
+        text-align: left;
+    }
+
+    .subject,
+    textarea {
+        width: calc(100% - 40px);
+    }
+
+    .subject,
+    textarea,
+    .checkbox {
+        margin-left: 20px;
+    }
+
+    p {
+        word-wrap: break-word;
+    }
+}
