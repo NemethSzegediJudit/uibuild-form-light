@@ -16,10 +16,13 @@ body {
     align-items: center;
 }
 
-h1 {
+#form>div:first-child {
     display: flex;
-    text-align: center;
+    width: 100%;
+    justify-content: center;
+}
 
+h1 {
     font-family: 'EB Garamond', serif;
     font-size: 48px;
     font-weight: normal;
@@ -30,13 +33,12 @@ h1 {
     flex-direction: column;
 
     width: 100%;
-    max-width: 480px;
-
     margin: 20px 20px 30px 20px;
 }
 
 .subject {
     height: 64px;
+    width: calc(480px+15px);
     background-color: #FFFFFF;
 
     font-size: 16px;
@@ -48,6 +50,7 @@ h1 {
 
 textarea {
     height: 120px;
+    width: calc(480px+15px);
     background-color: #FFFFFF;
 
     font-size: 16px;
@@ -60,7 +63,8 @@ textarea {
     justify-content: space-between;
     align-items: center;
 
-    width: 480px;
+    width: 100%;
+    max-width: 480px;
 
     margin-bottom: 30px;
 }
@@ -69,6 +73,7 @@ p {
     font-size: 16px;
     font-weight: normal;
     word-wrap: break-word;
+    padding-left: 10px;
 }
 
 a {
@@ -94,7 +99,10 @@ button {
 @media (max-width: 520px) {
     h1 {
         font-size: 36px;
-        text-align: left;
+    }
+
+    #form>div:first-child {
+        justify-content: left;
     }
 
     .subject,
@@ -102,13 +110,10 @@ button {
         width: calc(100% - 40px);
     }
 
+    h1,
     .subject,
     textarea,
     .checkbox {
         margin-left: 20px;
-    }
-
-    p {
-        word-wrap: break-word;
     }
 }
